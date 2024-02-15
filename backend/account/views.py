@@ -2,9 +2,6 @@
 from rest_framework import generics
 from rest_framework.response import Response
 from .serializers import CustomUserSerializer
-from .utils import AccountUtils
-import json
-from django.contrib.auth.hashers import check_password, make_password
 from .models import CustomUser
 from rest_framework.authtoken.models import Token
 # Create your views here.
