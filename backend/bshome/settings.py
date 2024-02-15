@@ -82,10 +82,15 @@ WSGI_APPLICATION = 'bshome.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Bookstore',
+        'USER': 'postgres',
+        'PASSWORD': os.getenv('db_password'),
+        'HOST': 'localhost',
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
+
 
 
 # Password validation
