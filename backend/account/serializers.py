@@ -13,6 +13,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
             'email',
             'password',
             'is_admin',
+            'profile_image',
         ]
     
     def validate_password(self, value):
