@@ -8,7 +8,7 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 class CustomUser(AbstractUser):
-    
+    profile_image = models.ImageField(upload_to = "profile/", blank=True, null = True) 
     email = models.EmailField(unique=True, blank=False, null=False)
     is_admin = models.BooleanField(default= False)
     is_verified = models.BooleanField(default = False)
