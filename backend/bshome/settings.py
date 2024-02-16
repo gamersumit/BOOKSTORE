@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     # user defined apps
     'account',
     'bookstore',
+    'cart',
 ]
 
 MIDDLEWARE = [
